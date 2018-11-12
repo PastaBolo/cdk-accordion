@@ -7,5 +7,5 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  multi = false
+  multi = true
 }

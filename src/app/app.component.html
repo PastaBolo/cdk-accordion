@@ -1,12 +1,12 @@
 <h2>Accordion</h2>
 
-<app-accordion>
+<app-accordion [multi]="true">
   <app-expandable></app-expandable>
   <app-expandable></app-expandable>
 </app-accordion>
 
-<button (click)="multi = !multi">toggle multi</button>
 <cdk-accordion [multi]="multi">
+  <button (click)="multi = !multi">toggle multi</button>
   <app-expandable></app-expandable>
   <app-expandable></app-expandable>
 </cdk-accordion>

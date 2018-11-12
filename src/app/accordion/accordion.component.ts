@@ -7,4 +7,8 @@ import { CdkAccordion } from '@angular/cdk/accordion'
   styleUrls: ['./accordion.component.css'],
   providers: [{ provide: CdkAccordion, useExisting: forwardRef(() => AccordionComponent) }]
 })
-export class AccordionComponent extends CdkAccordion {}
+export class AccordionComponent extends CdkAccordion {
+  ngOnInit(): void {
+    this.openAll()
+  }
+}

@@ -1,4 +1,4 @@
-<div (click)="item.toggle()" style="border: 1px solid black; overflow: hidden">
+<div (click)="toggle()" style="border: 1px solid black; overflow: hidden">
   coucou
-  <div cdkAccordionItem #item="cdkAccordionItem" [@expansion]="item.expanded ? 'open' : 'close'">Hello</div>
+  <div [@expansion]="expanded ? 'open' : 'close'">Hello</div>
 </div>

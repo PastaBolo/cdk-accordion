@@ -8,10 +8,6 @@ import { CdkAccordionItem } from '@angular/cdk/accordion'
   styleUrls: ['./expandable.component.css'],
   animations: [expansionAnimation]
 })
-export class ExpandableComponent {
-  @ViewChild(CdkAccordionItem) item
-
-  ngAfterViewInit(): void {
-    console.log(this.item.accordion)
-  }
+export class ExpandableComponent extends CdkAccordionItem {
+  expanded = true
 }
