@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core'
+import { Component } from '@angular/core'
 import { expansionAnimation } from './expansion-animation'
 import { CdkAccordionItem } from '@angular/cdk/accordion'
 
